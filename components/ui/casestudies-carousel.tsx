@@ -85,6 +85,7 @@ const CaseStudiesCarousel: React.FC<CaseStudiesCarouselProps> = ({
     <div className="relative max-w-7xl mx-auto">
       {/* Cards Container */}
       <div className="overflow-hidden py-2 pb-[2.0rem]">
+
         <motion.div
           className="flex gap-6 transition-transform duration-500 ease-in-out"
           style={{
@@ -166,6 +167,7 @@ const CaseStudiesCarousel: React.FC<CaseStudiesCarouselProps> = ({
 
       {/* Navigation Controls - Bottom */}
       <div className="flex items-center justify-center mt-8 space-x-6">
+
         {/* Previous Button */}
         <motion.button
           onClick={goToPrevious}

@@ -21,8 +21,9 @@ export const InfoTabs: React.FC<InfoTabsProps> = ({ items }) => {
   const [selected, setSelected] = useState(0);
 
   return (
-    <div
+    <div>
       className="flex flex-col md:flex-row rounded-3xl bg-black overflow-hidden border border-blue-400 dark:border-blue-400/40 shadow-xl"
+
     >
       {/* Left: Tab List */}
       <div
@@ -53,7 +54,10 @@ export const InfoTabs: React.FC<InfoTabsProps> = ({ items }) => {
       </div>
 
       {/* Right: Tab Content */}
+
+
       <div className="md:w-1/2 w-full bg-gray-50 dark:bg-black flex flex-col justify-center items-center p-10 relative">
+
         <AnimatePresence mode="wait">
           <motion.div
             key={selected}
